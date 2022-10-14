@@ -164,9 +164,17 @@ button {
     text-decoration: none;
 }
 
-.auth-nav :hover,
-.auth-nav :focus {
+.link-env:hover .icon-envelope,
+.link-env:focus .icon-envelope {
 
+    fill: var(--accent-color);
+    color: var(--accent-color);
+}
+
+.link-fone:hover .icon-fone,
+.link-fone:focus .icon-fone {
+
+    fill: var(--accent-color);
     color: var(--accent-color);
 }
 
@@ -182,8 +190,8 @@ button {
     gap: 10px;
 }
 
-.icon:hover,
-.icon:focus {
+.link:hover,
+.link:focus {
 
     color: var(--accent-color);
 }
@@ -208,7 +216,7 @@ button {
     max-width: 1600px;
     max-height: 600px;
     background-color: #2F303A;
-    background-image: linear-gradient(to right,rgba(47, 48, 58, 0.4), rgba(47,48,58,0.4)), url(../images/HERO.jpg);
+    background-image: linear-gradient(to right,rgba(47, 48, 58, 0.4), rgba(47,48,58,0.4)), url(../images/hero.jpg);
     background-repeat: no-repeat;
     background-position: center; 
     background-size: cover;
@@ -369,6 +377,79 @@ button {
     letter-spacing: 0.03em;
 }
 
+.net-list {
+
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 16px;
+}
+
+.net-link {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color:;
+}
+
+.net-link:hover,
+.net-link:focus {
+    background-color: #2196F3;
+}
+
+.net-link:hover .net-icon,
+.net-link:focus .net-icon{
+
+    fill: white;
+}
+
+.net-icon {
+    fill:#AFB1B8;
+}
+
+.client-list {
+    display: flex;
+    gap: 30px;
+    
+}
+
+.client-item {
+    width: calc((100% - 150px) / 6);
+}
+
+.client-link:hover,
+.client-link :focus {
+
+    border-color: var(--accent-color);
+}
+
+.client-link:hover .icon-client,
+.client-link:focus .icon-client{
+    
+    fill: var(--accent-color);
+}
+
+
+.icon-client {
+
+    fill: #AFB1B8;
+}
+
+.client-link {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+}
+
+
 .section-title {
     color: var(--title-text-color);
     font-style: normal;
@@ -466,6 +547,8 @@ button {
 
     color: #FFFFFF;
     background-color: #2196F3;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
 }
 
 .title-portfolio {
@@ -499,16 +582,16 @@ button {
 
 }
 
-.foto-content:hover {
+.foto-content {
+    text-decoration: none;
+}
 
+.foto-content:hover {
+    text-decoration: none;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
- 
-.container-footer {
 
-    
-}
 
 .footer {
 
@@ -566,4 +649,61 @@ button {
 .footer .logo-header {
 
     color: #FFFFFF;
+}
+
+.footer-title {
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+    padding-top: -25px;
+   
+}
+
+.footer-net {
+    display: block;
+    margin-top:;
+}
+
+.footer-container{
+    display: flex;
+    align-items: baseline;
+    gap: 70px;
+}
+
+.net-list-footer {
+
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 16px;
+}
+
+.net-link-footer {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.net-link-footer:hover,
+.net-link-footer:focus {
+    background-color: #2196F3;
+}
+
+.net-link:hover .net-icon,
+.net-link:focus .net-icon {
+
+    fill: white;
+}
+
+.net-icon {
+    fill: white;
 }
