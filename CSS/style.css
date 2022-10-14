@@ -215,7 +215,7 @@ button {
 
     max-width: 1600px;
     max-height: 600px;
-    
+    background-color: #2F303A;
     background-image: linear-gradient(to right,rgba(47, 48, 58, 0.4), rgba(47,48,58,0.4)), url(../images/hero.jpg);
     background-repeat: no-repeat;
     background-position: center; 
@@ -392,7 +392,7 @@ button {
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    background-color:;
+    
 }
 
 .net-link:hover,
@@ -666,7 +666,7 @@ button {
 
 .footer-net {
     display: block;
-    margin-top:;
+    
 }
 
 .footer-container{
